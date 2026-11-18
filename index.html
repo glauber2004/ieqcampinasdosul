@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Igreja do Evangelho Quadrangular · Campinas do Sul</title>
+  <meta name="description" content="Site da Igreja do Evangelho Quadrangular de Campinas do Sul: história, lideranças, eventos, cultos e redes sociais.">
+  <meta name="theme-color" content="#0b2a5b">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ============ HEADER ============ -->
+  <header class="header" id="topo">
+    <div class="faixa-quatro"><i></i><i></i><i></i><i></i></div>
+    <div class="container header-in">
+      <a href="#inicio" class="marca">
+        <span class="marca-cruz" aria-hidden="true">✝</span>
+        <span class="marca-txt">
+          <strong>Evangelho Quadrangular</strong>
+          <small>Campinas do Sul · RS</small>
+        </span>
+      </a>
+      <button class="menu-btn" id="menuBtn" aria-label="Abrir menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+      <nav class="nav" id="nav">
+        <a href="#historia">Nossa História</a>
+        <a href="#liderancas">Lideranças</a>
+        <a href="#eventos">Eventos</a>
+        <a href="#cultos">Cultos</a>
+        <a href="#redes">Redes Sociais</a>
+        <a href="#midia">Equipe de Mídia</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- ============ HERO ============ -->
+    <section class="hero" id="inicio">
+      <div class="hero-in container">
+        <p class="hero-sub">Seja bem-vindo à</p>
+        <h1>Igreja do Evangelho<br><span>Quadrangular</span></h1>
+        <p class="hero-local">Campinas do Sul · Rio Grande do Sul</p>
+        <p class="hero-quatro">Jesus Salva · Jesus Batiza com o Espírito Santo · Jesus Cura · Jesus Voltará</p>
+        <div class="hero-btns">
+          <a class="btn btn-ouro" href="#historia">Conheça nossa história</a>
+          <a class="btn btn-borda" href="#cultos">Ver cultos</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ HISTÓRIA ============ -->
+    <section class="secao" id="historia">
+      <div class="container">
+        <h2 class="titulo">Nossa História</h2>
+        <p class="subtitulo" id="historiaTexto"></p>
+        <div class="carousel carousel-historia" id="carHistoria">
+          <div class="viewport"><div class="track" id="historiaTrack"></div></div>
+          <button class="car-btn prev" aria-label="Anterior">‹</button>
+          <button class="car-btn next" aria-label="Próximo">›</button>
+          <div class="dots"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ LIDERANÇAS ============ -->
+    <section class="secao secao-clara" id="liderancas">
+      <div class="container">
+        <h2 class="titulo">Nossas Lideranças</h2>
+        <p class="subtitulo">Conheça quem serve e cuida da nossa igreja.</p>
+        <div id="liderancasLista"></div>
+      </div>
+    </section>
+
+    <!-- ============ EVENTOS ============ -->
+    <section class="secao" id="eventos">
+      <div class="container">
+        <h2 class="titulo">Eventos</h2>
+        <p class="subtitulo">Fotos e vídeos dos momentos especiais da nossa igreja.</p>
+        <div class="abas" id="abasEventos" role="tablist">
+          <button class="aba on" data-aba="batismos" role="tab">Batismos</button>
+          <button class="aba" data-aba="outros" role="tab">Outros eventos</button>
+        </div>
+        <div id="eventosLista" class="eventos-lista"></div>
+      </div>
+    </section>
+
+    <!-- ============ CULTOS ============ -->
+    <section class="secao secao-clara" id="cultos">
+      <div class="container">
+        <h2 class="titulo">Cultos</h2>
+        <p class="subtitulo">Escolha o ano, o mês e o domingo para ver as fotos e vídeos do culto.</p>
+        <div class="abas" id="abasAnos" role="tablist"></div>
+        <div id="cultosLista"></div>
+      </div>
+    </section>
+
+    <!-- ============ REDES SOCIAIS ============ -->
+    <section class="secao secao-azul" id="redes">
+      <div class="container">
+        <h2 class="titulo titulo-claro">Redes Sociais</h2>
+        <p class="subtitulo subtitulo-claro">Acompanhe a igreja e fale com a gente.</p>
+        <div class="redes" id="redesLista"></div>
+      </div>
+    </section>
+
+    <!-- ============ EQUIPE DE MÍDIA ============ -->
+    <section class="secao" id="midia">
+      <div class="container">
+        <h2 class="titulo">Equipe de Mídia</h2>
+        <p class="subtitulo">Responsável pelas fotos, vídeos e por este site.</p>
+        <div class="carousel carousel-midia" id="carMidia">
+          <div class="viewport"><div class="track" id="midiaTrack"></div></div>
+          <button class="car-btn prev" aria-label="Anterior">‹</button>
+          <button class="car-btn next" aria-label="Próximo">›</button>
+          <div class="dots"></div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="footer">
+    <div class="faixa-quatro"><i></i><i></i><i></i><i></i></div>
+    <div class="container footer-in">
+      <div class="footer-col">
+        <h3>Evangelho Quadrangular</h3>
+        <p>Campinas do Sul · RS</p>
+        <p class="footer-quatro">Salvador · Batizador · Curador · Rei Vindouro</p>
+      </div>
+      <div class="footer-col">
+        <h3>Navegue</h3>
+        <a href="#historia">Nossa História</a>
+        <a href="#liderancas">Lideranças</a>
+        <a href="#eventos">Eventos</a>
+        <a href="#cultos">Cultos</a>
+      </div>
+      <div class="footer-col">
+        <h3>Contato</h3>
+        <div id="footerRedes"></div>
+      </div>
+    </div>
+    <div class="footer-fim">
+      <p>© <span id="ano"></span> Igreja do Evangelho Quadrangular · Campinas do Sul. Site feito pela Equipe de Mídia.</p>
+    </div>
+  </footer>
+
+  <!-- ============ LIGHTBOX ============ -->
+  <div class="lightbox" id="lightbox" hidden>
+    <button class="lb-fechar" aria-label="Fechar">×</button>
+    <button class="lb-nav lb-prev" aria-label="Anterior">‹</button>
+    <img id="lbImg" alt="">
+    <button class="lb-nav lb-next" aria-label="Próxima">›</button>
+    <p class="lb-cont" id="lbCont"></p>
+  </div>
+
+  <script src="dados.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
